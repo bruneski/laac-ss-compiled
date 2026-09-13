@@ -1,0 +1,6 @@
+{
+    "donorTracking": {
+        "donations": "query laacQuery($board: [ID!]!, $group: [ID!]!) { boards (ids: [$board] { groups (ids: [$group]) { title id }}",
+        "donors": "query laacQuery($board: [ID!]!, $group: [ID!]!) { boards (ids: [$board] { groups (ids: [$group]) { title id }}}"
+    }
+}

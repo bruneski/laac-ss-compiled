@@ -1,0 +1,18 @@
+{
+    "name": "laac-sqspace-dist",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "JS Distribution Repo for LAAC website",
+    "license": "ISC",
+    "author": "Matthew Brune",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^6.4.2"
+    }
+}

@@ -1,0 +1,50 @@
+<p>Hello Vite!</p>
+<style>
+    #sponsorDashboard {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .breakdown {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        details {
+            border: 4px solid #759B61;
+            summary {
+                padding: 20px;
+                background-color: #EFC913;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: #43862e;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                cursor: pointer;
+                &::marker {
+                    content: "+ ";
+                    font-family: monospace;
+                    color: #759B61;
+                    font-weight: bold;
+                }
+            }
+            &[open] {
+                summary::marker {
+                    content: "- ";
+                }
+            }
+            .sponsor__container {
+                background-color: #f3efe4;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 200px);
+                p {
+                    margin: 10px 20px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+    }
+</style>
+<div id="sponsorDashboard"> 
+</div>
+<script type="text/javascript" src="./dist/laac.bundle.js"></script>
